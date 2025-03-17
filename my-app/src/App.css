@@ -1,0 +1,350 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #f8f9fa;
+  color: #495057;
+  font-size: 16px;
+  line-height: 1.6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  padding: 20px;
+}
+
+h1, h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  color: #343a40;
+}
+
+/* Button Styles */
+button {
+  padding: 12px 24px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin: 10px 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+}
+
+/* Input Styles */
+input {
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(38, 143, 255, 0.5);
+}
+
+/* Form Layout */
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 600px; /* Larger max-width for sign-up */
+  margin: 0 auto;
+}
+
+/* Page-Specific Styles */
+
+/* Intro Page */
+.intro-container {
+  text-align: center;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.intro-container h1 {
+  margin-bottom: 20px;
+}
+
+.intro-container .intro-content {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.intro-container button {
+  background-color: #28a745;
+}
+
+.intro-container button:hover {
+  background-color: #218838;
+}
+
+/* Signup Page */
+.signup-container {
+  width: 100%;
+  max-width: 700px; /* Adjusted width */
+  margin: 0 auto;
+  padding: 40px; /* Adjusted padding to reduce height */
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.signup-container h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.signup-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.signup-container input {
+  padding: 16px; /* Larger padding for better readability */
+  font-size: 1.2rem;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  width: 100%; /* Inputs take full width of the container */
+  box-sizing: border-box;
+}
+
+.signup-container button {
+  padding: 16px; /* Larger button */
+  font-size: 1.2rem; 
+  color: #fff;
+  background-color: #28a745; /* Green button */
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  width: 100%; /* Full width button */
+}
+
+.signup-container button:hover {
+  background-color: #218838;
+}
+
+.signup-container input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(38, 143, 255, 0.5);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .signup-container {
+    width: 90%; /* Smaller container for medium-sized screens */
+    padding: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .signup-container {
+    width: 95%; /* Even smaller for very small screens */
+    padding: 20px;
+  }
+}
+/* Login Page */
+.login-container {
+  width: 100%;
+  max-width: 700px; /* Adjusted width */
+  margin: 0 auto;
+  padding: 40px; /* Adjusted padding to make it more spacious */
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.login-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-container input {
+  padding: 16px; /* Increased padding for better readability */
+  font-size: 1.2rem;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  width: 100%; /* Inputs take full width of the container */
+  box-sizing: border-box;
+}
+
+.login-container button {
+  padding: 16px; /* Larger button */
+  font-size: 1.2rem; 
+  color: #fff;
+  background-color: #007bff; /* Blue button */
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  width: 100%; /* Full width button */
+}
+
+.login-container button:hover {
+  background-color: #0056b3;
+}
+
+.login-container input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(38, 143, 255, 0.5);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .login-container {
+    width: 90%; /* Smaller container for medium-sized screens */
+    padding: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-container {
+    width: 95%; /* Even smaller for very small screens */
+    padding: 20px;
+  }
+}
+/* Home Page */
+.home-container {
+  width: 100%;
+  max-width: 900px; /* Larger container */
+  padding: 40px; /* Adjust padding to create space */
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  margin: 30px auto; /* Center the container */
+}
+
+.home-container h1 {
+  font-size: 2.5rem;
+  color: black; /* Green color for heading */
+  margin-bottom: 20px;
+}
+
+.home-container p {
+  font-size: 1.2rem;
+  color: #6c757d; /* Lighter color for description */
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* Home Greeting Container */
+.home-greeting-container {
+  background-color: #28a745; /* Green background for greeting container */
+  color: black;
+  padding: 40px;
+  border-radius: 12px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* Home Greeting */
+.home-greeting {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* Add a card-like container for content */
+.home-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.home-content p {
+  font-size: 1.2rem;
+  color: black;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .home-container {
+    width: 90%;
+    padding: 30px;
+  }
+
+  .home-greeting {
+    font-size: 2rem;
+  }
+
+  .home-content p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-container {
+    width: 95%;
+    padding: 20px;
+  }
+
+  .home-greeting {
+    font-size: 1.8rem;
+  }
+
+  .home-content p {
+    font-size: 0.9rem;
+  }
+}
+
+/* Logout Button */
+.btn-logout {
+  padding: 10px 20px; /* Medium padding */
+  font-size: 1rem; /* Medium font size */
+  color: #fff;
+  background-color: #dc3545; /* Red for logout */
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin-top: 20px; /* Spacing from other content */
+  width: auto; /* Auto width for a more compact button */
+}
+
+.btn-logout:hover {
+  background-color: #c82333; /* Darker red on hover */
+}
+
+.btn-logout:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.5); /* Subtle outline for focus */
+}
+
+
